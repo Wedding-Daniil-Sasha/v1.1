@@ -81,9 +81,9 @@ h1.script-font {
 .dates .heart::before {
   content: "❤";
   color: #7b4a41;
-  font-size: 24px;
+  font-size: 26px;
   position: absolute;
-  top: -12px;
+  top: -14px;
   left: 50%;
   transform: translateX(-50%);
 }
