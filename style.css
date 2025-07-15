@@ -1,90 +1,112 @@
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Playfair Display', serif;
   background-color: #ffffff;
-  color: #2e2e2e;
-  text-align: center;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  background-image: url('images/grass-background.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .invitation {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 40px 20px;
+  background-color: #fffefc;
+  padding: 40px 30px;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(4px);
 }
 
-.script-font {
+h1.script-font {
   font-family: 'Dancing Script', cursive;
-  font-size: 2.5em;
+  font-size: 36px;
+  color: #5e4435;
   margin-bottom: 30px;
 }
 
 .photos {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  margin-bottom: 20px;
+  gap: 20px;
+  margin-bottom: 15px;
 }
 
 .photos img {
-  width: 45%;
-  max-width: 300px;
-  border-radius: 4px;
+  width: 130px;
+  height: 160px;
   object-fit: cover;
+  border-radius: 8px;
 }
 
 .names {
   display: flex;
   justify-content: space-around;
-  font-size: 1.6em;
+  font-size: 22px;
   font-weight: bold;
   margin: 20px 0;
 }
 
 .calendar {
-  margin-top: 30px;
+  margin: 20px 0;
 }
 
-.weekdays, .dates {
+.weekdays,
+.dates {
   display: flex;
   justify-content: space-between;
-  font-size: 1.2em;
-  margin: 5px 0;
-  padding: 0 10px;
+  max-width: 320px;
+  margin: 0 auto;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
 
-.heart {
+.dates {
+  margin-top: 10px;
+}
+
+.dates .heart {
   position: relative;
   color: #fff;
   font-weight: bold;
-  background-color: #6a3b3b;
-  border-radius: 50%;
-  width: 28px;
-  height: 28px;
-  line-height: 28px;
-  text-align: center;
-  margin: -4px 0;
+}
+
+.dates .heart::before {
+  content: "❤";
+  color: #7b4a41;
+  font-size: 24px;
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .message {
-  margin: 40px 0 20px;
-  font-size: 1.1em;
-  line-height: 1.5;
-  padding: 0 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 30px;
+  padding: 0 10px;
 }
 
 .telegram-link {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 22px;
-  background-color: #2e6f57;
-  color: white;
+  margin-top: 30px;
+  background-color: #7b4a41;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 6px;
-  transition: background-color 0.3s ease;
+  font-weight: 500;
+  transition: background 0.3s ease;
 }
 
 .telegram-link:hover {
-  background-color: #225042;
+  background-color: #5e332f;
 }
